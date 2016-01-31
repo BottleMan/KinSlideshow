@@ -135,3 +135,21 @@ btn:{
 * 小提示2:
 
 > 想要兼容Chrome需要在img标签中写上图片的实际宽度和高度```<img src= width="xx" height="xx" alt="标题" >```,其他浏览器不需要，直接```<img src="" alt="标题" >```
+
+
+* 小提示3：
+
+> 如果moveStyle是「right」或者「left」，则html必须必须这样写，这种写法是正确的：
+
+```
+<a href="#" target="_blank"><img src="images/1.jpg" alt="这是标题一" width="600" height="300" /></a>
+```
+
+> 如果这样写，还有换行，那么会出现空格现象，所以在做的过程中，请注意代码格式化
+
+```
+<a href="#" target="_blank">
+    <img src="images/1.jpg" alt="这是标题一" width="600" height="300" />
+</a>
+```
+> 上边这种写法是错的。
